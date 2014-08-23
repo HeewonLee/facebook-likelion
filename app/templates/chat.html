@@ -1,0 +1,29 @@
+{% extends "base.html" %}	
+{% block layout %}
+<div class="container">
+	<div class="row">
+		<div class="col-sm-offset-2 col-sm-10"><h1>미니 채팅방</h1></div>
+		<div id="chat_area">
+			<div id='chat-pannel' class="col-sm-offset-2 col-sm-6 panel panel-default">
+				<div class="panel-body" id="chat-room">
+					<table id='chat-table'>
+						
+					</table>
+				</div>
+			</div>
+			<div class="col-sm-2 panel panel-default" id="user-pannel">
+				<div class="panel-heading">
+					<h3 class="panel-title">접속자</h3>
+				</div>
+				<div class="panel-body" id="user-bar"><ul id="members"></ul>
+				</div>
+			</div>
+			<div class="col-sm-offset-2 col-sm-6"><input type="text" id="chatting"></div>
+			<div class="col-sm-2"><button id="chat-btn" class="btn btn-default" style="width:100%;">입력</button> </div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/base.js') }}"></script>
+{% endblock %}

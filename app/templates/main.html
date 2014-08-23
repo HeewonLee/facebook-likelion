@@ -1,0 +1,25 @@
+{% extends "base.html" %}   
+{% block layout %}
+<div class="container">
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <div class="row">
+        <ul class='flashes'>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+    {% endwith %}
+    <div class="row">
+        <div class="col-sm-offset-4 col-sm-4">
+            <a class="btn btn-block btn-social btn-facebook facebook-button" href="{{ url_for('login') }}">
+                <i class="fa fa-facebook"></i>Sign In With Facebook
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block script %}
+{% endblock %}

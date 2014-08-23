@@ -1,0 +1,44 @@
+* {
+	max-width: 100%;
+    word-break: break-all;
+}
+
+tr > td {
+    padding-bottom: 8px;
+}
+
+.facebook-button {
+    margin-top: 32px;
+}
+
+#chat_area {
+	height: 300px;
+}
+
+#user-pannel {
+	height: 300px;
+}
+
+#chat-pannel {
+	height: 300px;
+	overflow-y: scroll;
+}
+
+#members {
+    padding-left: 15px;
+}
+
+#chatting {
+    width: 100%;
+    padding: 5px;
+}
+
+/*overriding bootstrap*/
+.panel {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+p {
+    margin: 5px 0px 5px 0px;
+}
